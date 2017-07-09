@@ -6,12 +6,8 @@ from core.cli import interactive_config, confirm, parse_cli_flags, ask_sentry
 from core.core_commands import Core
 from core.dev_commands import Dev
 import asyncio
+import discord
 import sys
-try:
-    import discord
-except ImportError:
-	print('Couldn\'t Locate discord.py')
-	sys.exit()
 import logging.handlers
 import logging
 import os
